@@ -14,6 +14,6 @@ class MilitaryDepartment implements SubscriberInterface
      */
     public function receive($message)
     {
-        echo "Military department receive message: $message \n";
+        echo "<p>Military department receive message: <strong>$message</strong> </p>";
     }
 }

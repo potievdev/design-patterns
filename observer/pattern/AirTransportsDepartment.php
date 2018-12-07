@@ -14,6 +14,6 @@ class AirTransportsDepartment implements SubscriberInterface
      */
     public function receive($message)
     {
-        echo "Air transports department receive message: $message \n";
+        echo "<p>Air transports department receive message: <strong>$message</strong> </p>";
     }
 }

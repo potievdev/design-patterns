@@ -26,7 +26,6 @@ class App
         $weatherDepartment->subscribe($militaryDepartment);
         $weatherDepartment->subscribe($airTransportDepartment);
 
-        echo "Changing temperature" . PHP_EOL;
         $weatherDepartment->changeTemperature($temperature);
     }
 }
