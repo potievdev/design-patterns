@@ -10,10 +10,21 @@ use pattern\Singleton;
  */
 class App
 {
+    /**
+     * Increment
+     */
     public function increment()
     {
         $instance = Singleton::getInstance();
         $instance->increment();
+    }
+
+    /**
+     * @return int
+     */
+    public function getCount()
+    {
+        $instance = Singleton::getInstance();
         return $instance->getCount();
     }
 }

@@ -5,6 +5,10 @@ require_once __DIR__ . '/../autoload.php';
 $app1 = new \app\App();
 $app2 = new \app\App();
 
-echo $app1->increment();
-echo $app2->increment();
-echo $app1->increment();
+// apps incrementing the same property of singleton
+$app1->increment();
+$app2->increment();
+
+// Getting count returns the same values
+echo $app1->getCount() . PHP_EOL;
+echo $app2->getCount() . PHP_EOL;
