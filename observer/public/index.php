@@ -2,6 +2,12 @@
 
 require_once __DIR__ . '/../autoload.php';
 
-$temperature = intval($_POST['temperature'] ?? 0);
+if (isset($_POST['temperature'])) {
+    $temperature = intval($_POST['temperature']);
+    $app = new \app\App($temperature);
+}
 
-$app = new \app\App();
+echo '<form method="post">
+<input type="number" name="temperature" placeholder="temperature">
+<button>Submit</button>
+</form>';
