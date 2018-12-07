@@ -6,7 +6,7 @@ namespace pattern;
  * Class PaddingDecorator
  * @package pattern
  */
-class PaddingDecorator extends BaseDecorator implements RenderInterface
+class PaddingDecorator extends BaseDecorator implements PublisherInterface
 {
     /**
      * @return string

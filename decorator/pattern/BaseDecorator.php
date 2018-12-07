@@ -8,14 +8,14 @@ namespace pattern;
  */
 class BaseDecorator
 {
-    /** @var RenderInterface $element */
+    /** @var PublisherInterface $element */
     protected $element;
 
     /**
      * BaseDecorator constructor.
-     * @param RenderInterface $element
+     * @param PublisherInterface $element
      */
-    public function __construct(RenderInterface $element)
+    public function __construct(PublisherInterface $element)
     {
         $this->element = $element;
     }

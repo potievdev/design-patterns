@@ -6,7 +6,7 @@ namespace pattern;
  * Class Button
  * @package pattern
  */
-class Button implements RenderInterface
+class Button implements PublisherInterface
 {
     /**
      * @return string

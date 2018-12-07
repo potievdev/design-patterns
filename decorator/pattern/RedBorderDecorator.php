@@ -6,7 +6,7 @@ namespace pattern;
  * Class RedBorderDecorator
  * @package pattern
  */
-class RedBorderDecorator extends BaseDecorator implements RenderInterface
+class RedBorderDecorator extends BaseDecorator implements PublisherInterface
 {
     /**
      * @return string
